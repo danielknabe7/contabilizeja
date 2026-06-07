@@ -1,7 +1,8 @@
-import { BarChart3, FileText, Landmark, LockKeyhole, MessageCircle, ReceiptText, Rocket, Users } from "lucide-react";
+import type { ElementType } from "react";
+import { BarChart3, Landmark, LockKeyhole, ReceiptText, Rocket, Users } from "lucide-react";
 import { LeadCapture } from "@/components/LeadCapture";
 
-const features = [
+const features: [string, string, ElementType][] = [
   ["Abertura de empresa", "CNPJ, contrato, inscrições e regime tributário.", Rocket],
   ["Contabilidade mensal", "Impostos, guias, obrigações e demonstrativos.", ReceiptText],
   ["Consultoria tributária", "Planejamento para pagar o imposto correto.", Landmark],
