@@ -19,13 +19,15 @@ export function FeatureGrid() {
         <h2 className="mt-3 text-4xl font-black tracking-[-.05em] md:text-6xl">Uma operação contábil completa, digital e humana.</h2>
       </div>
       <div className="mt-12 grid gap-5 md:grid-cols-3">
-        {features.map(([title, desc, Icon]) => (
-          <div key={title as string} className="glass rounded-[2rem] p-6 transition hover:-translate-y-2">
-            <Icon className="text-mint" size={30} />
-            <h3 className="mt-5 text-xl font-black">{title}</h3>
-            <p className="mt-3 text-white/60">{desc}</p>
-          </div>
-        ))}
+        {features.map(([title, desc, Icon]) => {
+  return (
+    <div key={title} className="glass rounded-[2rem] p-6 transition hover:-translate-y-2">
+      <Icon className="text-mint" size={30} />
+      <h3 className="mt-5 text-xl font-black">{String(title)}</h3>
+      <p className="mt-3 text-white/60">{String(desc)}</p>
+    </div>
+  );
+})}
       </div>
     </section>
   );
