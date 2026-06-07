@@ -65,6 +65,7 @@ Edite `lib/site.ts`:
 - domínio
 
 Edite os preços em `components/Sections.tsx`.
+Atualização para novo deploy.
 
 ## Observação
 
